@@ -1,378 +1,377 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>가양 풀싸롱 정보 — 상세 정보 및 지역 가이드</title>
-    <meta name="description" content="가양 풀싸롱의 상세 정보와 지역 특징을 안내합니다. 처음 방문자를 위한 실용적인 팁을 포함합니다.">
-    <meta name="keywords" content="가양 풀싸롱, 정보, 지역 가이드, 처음 방문자">
-    <link rel="canonical" href="https://gayang-fullsalon-note.gongdeok-club.xyz/info">
-    <meta property="og:title" content="가양 풀싸롱 정보 — 상세 정보 및 지역 가이드">
-    <meta property="og:description" content="가양 풀싸롱의 상세 정보와 지역 특징을 안내합니다. 처음 방문자를 위한 실용적인 팁을 포함합니다.">
-    <meta property="og:url" content="https://gayang-fullsalon-note.gongdeok-club.xyz/info">
-    <meta property="og:type" content="website">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            font-family: 'Courier New', monospace;
-            line-height: 1.6;
-        }
-        .n-card-waee {
-            background: #111;
-            border: 2px solid #333;
-            margin: 20px auto;
-            max-width: 1200px;
-            padding: 30px;
-            position: relative;
-            overflow: hidden;
-        }
-        .n-card-waee::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, #ff003c, #00ff88);
-        }
-        .x-item-p852 {
-            border: 1px solid #444;
-            padding: 20px;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        .x-item-p852:hover {
-            border-color: #00ff88;
-            transform: translateX(5px);
-            background: rgba(0, 255, 136, 0.05);
-        }
-        .x-item-p852::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 3px;
-            height: 100%;
-            background: #333;
-            transition: all 0.3s ease;
-        }
-        .x-item-p852:hover::after {
-            background: #00ff88;
-            width: 5px;
-        }
-        .v-btn-1lk2 {
-            display: inline-block;
-            background: transparent;
-            border: 2px solid #ff003c;
-            color: #ff003c;
-            padding: 10px 25px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-        .v-btn-1lk2:hover {
-            background: #ff003c;
-            color: #000;
-            box-shadow: 0 0 20px rgba(255, 0, 60, 0.5);
-        }
-        .q-btn-nij3 {
-            display: inline-block;
-            background: #00ff88;
-            border: none;
-            color: #000;
-            padding: 12px 30px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .q-btn-nij3:hover {
-            background: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
-        }
-        .n-img-gl0n {
-            width: 100%;
-            height: 300px;
-            background: #222;
-            border: 2px dashed #444;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        .n-img-gl0n::before {
-            content: '이미지 영역';
-            color: #555;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        nav {
-            background: #111;
-            padding: 15px 30px;
-            border-bottom: 2px solid #333;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav .logo {
-            color: #ff003c;
-            font-size: 24px;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-        nav .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        nav .nav-links a {
-            color: #e0e0e0;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 14px;
-            transition: color 0.3s ease;
-        }
-        nav .nav-links a:hover {
-            color: #00ff88;
-        }
-        main {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 48px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 10px;
-            color: #fff;
-            border-left: 5px solid #ff003c;
-            padding-left: 20px;
-        }
-        .subtitle {
-            font-size: 18px;
-            color: #888;
-            margin-bottom: 40px;
-            padding-left: 25px;
-            border-left: 3px solid #333;
-        }
-        .section-title {
-            font-size: 28px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin: 40px 0 20px 0;
-            color: #00ff88;
-            position: relative;
-            padding-left: 15px;
-        }
-        .section-title::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 8px;
-            height: 100%;
-            background: #00ff88;
-        }
-        .faq-item {
-            border-bottom: 1px solid #333;
-            padding: 20px 0;
-        }
-        .faq-question {
-            font-weight: bold;
-            color: #fff;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-question::after {
-            content: '+';
-            font-size: 24px;
-            color: #ff003c;
-            transition: transform 0.3s ease;
-        }
-        .faq-answer {
-            display: none;
-            padding-top: 15px;
-            color: #aaa;
-            border-left: 2px solid #333;
-            padding-left: 15px;
-            margin-top: 15px;
-        }
-        .region-badge {
-            display: inline-block;
-            background: rgba(255, 0, 60, 0.2);
-            border: 1px solid #ff003c;
-            color: #ff003c;
-            padding: 5px 15px;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-        footer {
-            background: #111;
-            border-top: 2px solid #333;
-            padding: 30px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 32px;
-                letter-spacing: 2px;
-            }
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
-            nav .nav-links {
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .n-card-waee {
-                padding: 20px;
-            }
-            .section-title {
-                font-size: 24px;
-            }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>가양 풀싸롱 정보 — 상세 정보 및 지역 가이드</title>
+ <meta name="description" content="가양 풀싸롱의 상세 정보와 지역 특징을 안내합니다. 처음 방문자를 위한 실용적인 팁을 포함합니다.">
+ <meta name="keywords" content="가양 풀싸롱, 정보, 지역 가이드, 처음 방문자">
+ <link rel="canonical" href="https://gayang-fullsalon-note.gongdeok-club.xyz/about.html">
+ <meta property="og:title" content="가양 풀싸롱 정보 — 상세 정보 및 지역 가이드">
+ <meta property="og:description" content="가양 풀싸롱의 상세 정보와 지역 특징을 안내합니다. 처음 방문자를 위한 실용적인 팁을 포함합니다.">
+ <meta property="og:url" content="https://gayang-fullsalon-note.gongdeok-club.xyz/about.html">
+ <meta property="og:type" content="website">
+ <style>
+ body {
+ margin: 0;
+ padding: 0;
+ background-color: #0a0a0a;
+ color: #e0e0e0;
+ font-family: 'Courier New', monospace;
+ line-height: 1.6;
+ }
+ .n-card-waee {
+ background: #111;
+ border: 2px solid #333;
+ margin: 20px auto;
+ max-width: 1200px;
+ padding: 30px;
+ position: relative;
+ overflow: hidden;
+ }
+ .n-card-waee::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 5px;
+ background: linear-gradient(90deg, #ff003c, #00ff88);
+ }
+ .x-item-p852 {
+ border: 1px solid #444;
+ padding: 20px;
+ margin-bottom: 15px;
+ transition: all 0.3s ease;
+ position: relative;
+ }
+ .x-item-p852:hover {
+ border-color: #00ff88;
+ transform: translateX(5px);
+ background: rgba(0, 255, 136, 0.05);
+ }
+ .x-item-p852::after {
+ content: '';
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 3px;
+ height: 100%;
+ background: #333;
+ transition: all 0.3s ease;
+ }
+ .x-item-p852:hover::after {
+ background: #00ff88;
+ width: 5px;
+ }
+ .v-btn-1lk2 {
+ display: inline-block;
+ background: transparent;
+ border: 2px solid #ff003c;
+ color: #ff003c;
+ padding: 10px 25px;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-weight: bold;
+ transition: all 0.3s ease;
+ cursor: pointer;
+ }
+ .v-btn-1lk2:hover {
+ background: #ff003c;
+ color: #000;
+ box-shadow: 0 0 20px rgba(255, 0, 60, 0.5);
+ }
+ .q-btn-nij3 {
+ display: inline-block;
+ background: #00ff88;
+ border: none;
+ color: #000;
+ padding: 12px 30px;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: all 0.2s ease;
+ }
+ .q-btn-nij3:hover {
+ background: #fff;
+ transform: translateY(-2px);
+ box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+ }
+ .n-img-gl0n {
+ width: 100%;
+ height: 300px;
+ background: #222;
+ border: 2px dashed #444;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 20px;
+ position: relative;
+ }
+ .n-img-gl0n::before {
+ content: '이미지 영역';
+ color: #555;
+ font-size: 14px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ }
+ nav {
+ background: #111;
+ padding: 15px 30px;
+ border-bottom: 2px solid #333;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ nav .logo {
+ color: #ff003c;
+ font-size: 24px;
+ font-weight: bold;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ }
+ nav .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+ nav .nav-links a {
+ color: #e0e0e0;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-size: 14px;
+ transition: color 0.3s ease;
+ }
+ nav .nav-links a:hover {
+ color: #00ff88;
+ }
+ main {
+ padding: 40px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ h1 {
+ font-size: 48px;
+ text-transform: uppercase;
+ letter-spacing: 5px;
+ margin-bottom: 10px;
+ color: #fff;
+ border-left: 5px solid #ff003c;
+ padding-left: 20px;
+ }
+ .subtitle {
+ font-size: 18px;
+ color: #888;
+ margin-bottom: 40px;
+ padding-left: 25px;
+ border-left: 3px solid #333;
+ }
+ .section-title {
+ font-size: 28px;
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ margin: 40px 0 20px 0;
+ color: #00ff88;
+ position: relative;
+ padding-left: 15px;
+ }
+ .section-title::before {
+ content: '';
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 8px;
+ height: 100%;
+ background: #00ff88;
+ }
+ .faq-item {
+ border-bottom: 1px solid #333;
+ padding: 20px 0;
+ }
+ .faq-question {
+ font-weight: bold;
+ color: #fff;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .faq-question::after {
+ content: '+';
+ font-size: 24px;
+ color: #ff003c;
+ transition: transform 0.3s ease;
+ }
+ .faq-answer {
+ display: none;
+ padding-top: 15px;
+ color: #aaa;
+ border-left: 2px solid #333;
+ padding-left: 15px;
+ margin-top: 15px;
+ }
+ .region-badge {
+ display: inline-block;
+ background: rgba(255, 0, 60, 0.2);
+ border: 1px solid #ff003c;
+ color: #ff003c;
+ padding: 5px 15px;
+ font-size: 12px;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ margin-bottom: 20px;
+ }
+ footer {
+ background: #111;
+ border-top: 2px solid #333;
+ padding: 30px;
+ text-align: center;
+ color: #666;
+ font-size: 14px;
+ }
+ @media (max-width: 768px) {
+ h1 {
+ font-size: 32px;
+ letter-spacing: 2px;
+ }
+ nav {
+ flex-direction: column;
+ gap: 15px;
+ }
+ nav .nav-links {
+ gap: 15px;
+ flex-wrap: wrap;
+ justify-content: center;
+ }
+ .n-card-waee {
+ padding: 20px;
+ }
+ .section-title {
+ font-size: 24px;
+ }
+ }
+ </style>
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">GAYANG</a>
-        <div class="nav-links">
-            <a href="#">홈</a>
-            <a href="#">정보</a>
-            <a href="#">예약</a>
-            <a href="#">이용 후기</a>
-            <a href="#">문의</a>
-        </div>
-    </nav>
+ <nav>
+ <a href="#" class="logo">GAYANG</a>
+ <div class="nav-links">
+ <a href="#">홈</a>
+ <a href="#">정보</a>
+ <a href="#">예약</a>
+ <a href="#">이용 후기</a>
+ <a href="#">문의</a>
+ </div>
+ </nav>
 
-    <main>
-        <div class="region-badge">가양 지역 전용 정보</div>
-        <h1>정보</h1>
-        <p class="subtitle">가양 풀싸롱의 실질적 정보. 허세는 없음. 현실만 있음.</p>
+ <main>
+ <div class="region-badge">가양 지역 전용 정보</div>
+ <h1>정보</h1>
+ <p class="subtitle">가양 풀싸롱의 실질적 정보. 허세는 없음. 현실만 있음.</p>
 
-        <div class="n-card-waee">
-            <div class="n-img-gl0n"></div>
-            
-            <div class="section-title">지역 특성 및 접근성</div>
-            <div class="x-item-p852">
-                <h3>가양역 접근성</h3>
-                <p>가양역 6번 출구에서 도보 5분 거리. 지하철 9호선 직결로 강남, 여의도 접근 용이. 주차 공간은 협소하니 대중교통 추천. 택시 이용 시 '가양역 동 khẩu'로 안내.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>지역 상권 특징</h3>
-                <p>가양동은 상대적 저평가 지역. 임대료 합리적이라 가성비 높은 업소 밀집. 주변 대단지 아파트 주민들 주요 고객층. 오피스텔, 오피스 복합 상권과 인접.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>영업 시간 및 피크 타임</h3>
-                <p>평일 오후 6시~새벽 3시. 금요일·토요일은 새벽 4시까지 연장. 피크 타임은 오후 8시~10시. 예약은 최소 2시간 전 권장. 당일 예약은 변동 가능성 높음.</p>
-            </div>
+ <div class="n-card-waee">
+ <div class="n-img-gl0n"></div>
+ 
+ <div class="section-title">지역 특성 및 접근성</div>
+ <div class="x-item-p852">
+ <h3>가양역 접근성</h3>
+ <p>가양역 6번 출구에서 도보 5분 거리. 지하철 9호선 직결로 강남, 여의도 접근 용이. 주차 공간은 협소하니 대중교통 추천. 택시 이용 시 '가양역 동 khẩu'로 안내.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>지역 상권 특징</h3>
+ <p>가양동은 상대적 저평가 지역. 임대료 합리적이라 가성비 높은 업소 밀집. 주변 대단지 아파트 주민들 주요 고객층. 오피스텔, 오피스 복합 상권과 인접.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>영업 시간 및 피크 타임</h3>
+ <p>평일 오후 6시~새벽 3시. 금요일·토요일은 새벽 4시까지 연장. 피크 타임은 오후 8시~10시. 예약은 최소 2시간 전 권장. 당일 예약은 변동 가능성 높음.</p>
+ </div>
 
-            <div class="section-title">시설 및 인프라</div>
-            <div class="x-item-p852">
-                <h3>룸 구성 및 인원</h3>
-                <p>2인실~8인실 구성. 기본 2인실 기준면적 약 10평. 개인 락커, 샤워실 완비. 4인 이상 단체 예약 시 별도 룸 배정. VIP룸은 별도 문의.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>음주 및 서비스</h3>
-                <p>맥주, 양주, 하이볼 기본 제공. 추가 주류는 별도 계산. 기본 서비스에 미니게임, 노래방 기능 포함. 추가 요청 사항은 예약 시 반드시 명시.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>보안 및 프라이버시</h3>
-                <p>개별 룸 완전 분리. CCTV는 복도에만 설치. 고객 정보 철저히 관리. 직원 전원 비밀 유지 서약. 안심하고 이용 가능.</p>
-            </div>
+ <div class="section-title">시설 및 인프라</div>
+ <div class="x-item-p852">
+ <h3>룸 구성 및 인원</h3>
+ <p>2인실~8인실 구성. 기본 2인실 기준면적 약 10평. 개인 락커, 샤워실 완비. 4인 이상 단체 예약 시 별도 룸 배정. VIP룸은 별도 문의.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>음주 및 서비스</h3>
+ <p>맥주, 양주, 하이볼 기본 제공. 추가 주류는 별도 계산. 기본 서비스에 미니게임, 노래방 기능 포함. 추가 요청 사항은 예약 시 반드시 명시.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>보안 및 프라이버시</h3>
+ <p>개별 룸 완전 분리. CCTV는 복도에만 설치. 고객 정보 철저히 관리. 직원 전원 비밀 유지 서약. 안심하고 이용 가능.</p>
+ </div>
 
-            <div class="section-title">이용 규정 및 주의사항</div>
-            <div class="x-item-p852">
-                <h3>예약 취소 정책</h3>
-                <p>이용 3시간 전 취소 시 100% 환불. 1~3시간 전 50% 환불. 1시간 미만 및 노-show는 환불 불가. 예약 변경은 가능하나 재확인 필수.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>이용 제한 및 금지 사항</h3>
-                <p>만 19세 이상 이용 가능. 신분증 확인 의무. 음주 운전 절대 금지. 지정된 흡연 구역 외 흡연 금지. 시설물 파손 시 배상 책임.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>결제 수단</h3>
-                <p>현금, 신용카드, 계좌이체 가능. 법인 카드는 사전 협의 필요. 영수증 발급 가능. 세금계산서 요청 시 사업자등록증 사전 제출.</p>
-            </div>
+ <div class="section-title">이용 규정 및 주의사항</div>
+ <div class="x-item-p852">
+ <h3>예약 취소 정책</h3>
+ <p>이용 3시간 전 취소 시 100% 환불. 1~3시간 전 50% 환불. 1시간 미만 및 노-show는 환불 불가. 예약 변경은 가능하나 재확인 필수.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>이용 제한 및 금지 사항</h3>
+ <p>만 19세 이상 이용 가능. 신분증 확인 의무. 음주 운전 절대 금지. 지정된 흡연 구역 외 흡연 금지. 시설물 파손 시 배상 책임.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>결제 수단</h3>
+ <p>현금, 신용카드, 계좌이체 가능. 법인 카드는 사전 협의 필요. 영수증 발급 가능. 세금계산서 요청 시 사업자등록증 사전 제출.</p>
+ </div>
 
-            <div class="section-title">자주 묻는 질문</div>
-            <div class="faq-item">
-                <div class="faq-question">첫 방문 시 준비해야 할 것은?</div>
-                <div class="faq-answer">신분증(주민등록증, 운전면허증 등) 필수. 예약 확인 문자 지참. 추가 인원 변동 시 사전 통보. 특별 요청사항은 예약 시 메모.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">주변 주차 공간은?</div>
-                <div class="faq-answer">건물 지하 주차장 10면 한정. 만차 시 인근 공영주차장 이용 가능(유료). 대중교통 이용 권장. 주차 지원은 별도 문의.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">단체 예약 시 할인 있나?</div>
-                <div class="faq-answer">6인 이상 단체 10% 할인 적용. 10인 이상은 별도 견적. 사전 협의 필수. 할인 중복 적용 불가.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">예약 없이 방문 가능한가?</div>
-                <div class="faq-answer">가능하나 룸 배정 지연 가능성 높음. 피크 타임에는 예약 필수 권장. 비예약 고객은 대기 시간 발생.</div>
-            </div>
+ <div class="section-title">자주 묻는 질문</div>
+ <div class="faq-item">
+ <div class="faq-question">첫 방문 시 준비해야 할 것은?</div>
+ <div class="faq-answer">신분증(주민등록증, 운전면허증 등) 필수. 예약 확인 문자 지참. 추가 인원 변동 시 사전 통보. 특별 요청사항은 예약 시 메모.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question">주변 주차 공간은?</div>
+ <div class="faq-answer">건물 지하 주차장 10면 한정. 만차 시 인근 공영주차장 이용 가능(유료). 대중교통 이용 권장. 주차 지원은 별도 문의.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question">단체 예약 시 할인 있나?</div>
+ <div class="faq-answer">6인 이상 단체 10% 할인 적용. 10인 이상은 별도 견적. 사전 협의 필수. 할인 중복 적용 불가.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question">예약 없이 방문 가능한가?</div>
+ <div class="faq-answer">가능하나 룸 배정 지연 가능성 높음. 피크 타임에는 예약 필수 권장. 비예약 고객은 대기 시간 발생.</div>
+ </div>
 
-            <div class="section-title">지역 이용 팁</div>
-            <div class="x-item-p852">
-                <h3>교통 체증 회피</h3>
-                <p>가양대교~화곡동 구간 저녁 6~8시 극심한 체증. 지하철 9호선 이용이 가장 효율적. 택시 호출 시 '가양역'으로 설정 권장.</p>
-            </div>
-            <div class="x-item-p852">
-                <h3>근처 편의시설</h3>
-                <p>편의점, 약국 5분 이내. 음식점은 가양역 롯데백화점 방면 다양. 택시 승강장은 정문 앞에 위치.</p>
-            </div>
-        </div>
-    </main>
+ <div class="section-title">지역 이용 팁</div>
+ <div class="x-item-p852">
+ <h3>교통 체증 회피</h3>
+ <p>가양대교~화곡동 구간 저녁 6~8시 극심한 체증. 지하철 9호선 이용이 가장 효율적. 택시 호출 시 '가양역'으로 설정 권장.</p>
+ </div>
+ <div class="x-item-p852">
+ <h3>근처 편의시설</h3>
+ <p>편의점, 약국 5분 이내. 음식점은 가양역 롯데백화점 방면 다양. 택시 승강장은 정문 앞에 위치.</p>
+ </div>
+ </div>
+ </main>
 
-    <footer>
-        <p>© 2024 가양 풀싸롱 정보 제공. 모든 권리 보유. 실제 이용 시 변동 가능.</p>
-        <p>본 정보는 참고용이며, 정확한 내용은 직접 문의하시기 바랍니다.</p>
-    </footer>
+ <footer>
+ <p>© 2024 가양 풀싸롱 정보 제공. 모든 권리 보유. 실제 이용 시 변동 가능.</p>
+ <p>본 정보는 참고용이며, 정확한 내용은 직접 문의하시기 바랍니다.</p>
+ </footer>
 
-    <script>
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', () => {
-                const answer = item.nextElementSibling;
-                const isOpen = answer.style.display === 'block';
-                
-                document.querySelectorAll('.faq-answer').forEach(ans => {
-                    ans.style.display = 'none';
-                });
-                document.querySelectorAll('.faq-question').forEach(q => {
-                    q.querySelector('::after')?.remove();
-                });
-                
-                if (!isOpen) {
-                    answer.style.display = 'block';
-                }
-            });
-        });
-    </script>
+ <script>
+ document.querySelectorAll('.faq-question').forEach(item => {
+ item.addEventListener('click', () => {
+ const answer = item.nextElementSibling;
+ const isOpen = answer.style.display === 'block';
+ 
+ document.querySelectorAll('.faq-answer').forEach(ans => {
+ ans.style.display = 'none';
+ });
+ document.querySelectorAll('.faq-question').forEach(q => {
+ q.querySelector('::after')?.remove();
+ });
+ 
+ if (!isOpen) {
+ answer.style.display = 'block';
+ }
+ });
+ });
+ </script>
 </body>
 </html>

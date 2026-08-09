@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://gayang-fullsalon-note.gongdeok-club.xyz/sitemap.xml
+Sitemap: https://gayang-fullsalon-note.gongdeok-club.xyz/sitemap-pages.xml
